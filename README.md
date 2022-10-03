@@ -1,1 +1,2 @@
-# vedic_multiplier
+# 4bit Vedic_Multiplier with Kogge Stone PPA
+- Urdhva Tiryagbhyam sutra which is the general formula applicable to all cases of multiplication .“Urdhva” and “Tiryagbhyam” words are derived from Sanskrit literature. Urdhva means “Vertically” and Tiryagbhyam means “crosswise”. It is based on a novel concept, where the generation of all intermediates can be done with the concurrent addition of partial products. 
