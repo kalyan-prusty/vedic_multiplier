@@ -58,20 +58,94 @@ Following represents all the steps in pictorial format.
 
 ![Step-3](images/step_3.png)
 
+## Block Diagram of 4-bit Multiplier
 The block diagram of the 4bit Vedic Multiplier can be shown as follows.
 
 <p align="center" width="100%">
-    <img width="100%" src="images/kogge_stone.svg"> 
+    <img width="60%" src="images/kogge_stone.svg"> 
 </p>
 
+## Components of 4-bit Multiplier 
+###
+### Kogge Stone Adder
 The adder used in this is a parallel prefix version of the Carry Look Ahead Adder (CLA) i.e. Kogge Stone PPA. It is the fastest adder which focuses on design time and is said to be a good alternative for high performance applications. The speedy nature of Kogge Stone Adder (KSA) is because of minimum logic depth and restricted fan-out. In KSA, parallel advance will give scope to generate fast carry for intermediate stages. Block diagram of KSA is as follows 
 
 <p align="center" width="100%">
-    <img width="100%" src="images/kogge_stone_block.svg"> 
+    <img width="60%" src="images/kogge_stone_block.svg"> 
 </p>
 
 Black and Grey circle in KSA can be implimented as shown below
 
 <p align="center" width="100%">
-    <img width="100%" src="images/kogge_stone_block.svg"> 
+    <img width="30%" src="images/grey_black.png"> 
+</p>
+
+More on KSA can be found [here](https://en.wikipedia.org/wiki/Kogge%E2%80%93Stone_adder)
+
+This module is a complete digital module and is implimented using Verilog HDL and simulated & verified using makerchip. 
+- Verilog Code for "black circle".
+```verilog 
+module black_circle(gi,pi,gj,pj,gk,pk);
+	input gi,pi,gj,pj;
+	output gk,pk;
+	
+	assign gk = gi | (gj & pi);
+	assign pk = pi&pj;
+endmodule 
+```
+- Verilog Code for "grey circle".
+```verilog 
+module grey_circle(gi,pi,gj,gk);
+	input gi,pi,gj;
+	output gk;
+	
+	assign gk = gi | (gj & pi);
+endmodule 
+```
+
+- Verilog Code for "ksa 4bit adder".
+```verilog 
+module ksa_4bit(a,b,y);
+	input [3:0] a;
+	input [3:0] b;
+	output [4:0] y;
+
+	wire [3:0] g;
+	wire [3:0] p;
+	wire [3:0] h;
+
+	wire g11,g12,g21,g22;
+	wire p12;
+
+	generate
+		genvar i;
+		for (i = 0; i < 4; i = i + 1)
+		begin:pgh_block
+			assign p[i] = a[i] | b[i];
+			assign g[i] = a[i] & b[i];
+			assign h[i] = a[i] ^ b[i];
+		end
+	endgenerate
+
+	//layer - 1
+	grey_circle  gc11(.gi(g[1]),.pi(p[1]),.gj(g[0]),.gk(g11));
+	black_circle bc11(.gi(g[3]),.pi(p[3]),.gj(g[2]),.pj(p[2]),.gk(g12),.pk(p12));
+
+	//layer - 2
+	grey_circle  gc21(.gi(g[2]),.pi(p[2]),.gj(g11),.gk(g21));
+	grey_circle  gc22(.gi(g12),.pi(p12),.gj(g11),.gk(g22));
+
+	//sum
+	assign y[0] = h[0] ^ 0;
+	assign y[1] = h[1] ^ g[0];
+	assign y[2] = h[2] ^ g11;
+	assign y[3] = h[3] ^ g21;
+	assign y[4] = g22;
+
+endmodule 
+```
+This KSA is simulated in makerchip and the simulated result is as follows.
+
+<p align="center" width="100%">
+    <img width="30%" src="images/ksa_simulation.png"> 
 </p>
