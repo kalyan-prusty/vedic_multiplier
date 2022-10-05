@@ -209,6 +209,7 @@ Here along with the previous discussed sub circuits, adc_bridge_n and dac_bridge
     <img width="100%" src="images/main_simulation.png"> 
 </p>
 
+### Simulation Results
 Input for the above design:
 - Input "**a**" is 10(0b1010) for t = 0 to 1 sec and then 7(0b0111) for t = 1 to 2 sec
 
