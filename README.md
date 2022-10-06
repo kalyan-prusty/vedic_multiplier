@@ -4,6 +4,8 @@ Urdhva Tiryagbhyam sutra which is the general formula applicable to all cases of
 
 This repository presents the mixed signal design for Vedic Multiplier using PPA (Parallel Prefix Adder). Partial product generation logic, a complete analog circuit is designed in [eSim](https://esim.fossee.in/home) and is simulated with [NgSpice](http://ngspice.sourceforge.net/docs.html) & SKY130 library. KSA designed using Verilog HDL is simulated & verified in [Makerchip](https://www.makerchip.com/).
 
+All the project related files are available [here](https://github.com/kalyan-prusty/vedic_multiplier/tree/main/vedic_multi_4bit_test).
+
 ## Tool Used
 
 ### eSim
@@ -68,6 +70,7 @@ The block diagram of the 4bit Vedic Multiplier can be shown as follows.
 </p>
 
 ## Components of 4-bit Multiplier 
+Subcircuit for NOT, AND & XOR gates are designed as shown below.
 
 ### NOT gate with SKY130
 Here the W/L ratio of PMOS to NMOS is maintained 2 (assuming mobility_of_electron/mobility_of_hole = 2) such that the rise time and fall time will be same. 
@@ -232,6 +235,17 @@ Output from the above design:
 <p align="center" width="100%">
     <img width="100%" src="images/z_wave.gif"> 
 </p>
+
+## Salient Feature of Design
+- Parallel generation of partial product makes the design more suitable for faster multiplication application.  
+- Kogge Stone Parallel Prefix Adder is one of the fastest adder being used in design.
+- All the primitive gates are designed with proper W/L ratio to maintain rise and fall time same. 
+- Modularzation of the project makes the design easy to debug and improve.
+- Design is completely scalable as this can be used as a building block for 8bit vedic multiplier.
+
+## Future Scope
+- This whole design is a combinational circuit but dividing it into logical 2 part and including just with a flipflop of 16 bit width we can pipeline this design with 2 stages. First stage of pipeline being the partial product generator (Analog Design) and second stage being the partial product adder using KSA (Degital Design).
+- KSA can be replaced by some more improved design of adder.
 
 ## Reference
 [1] [Urdhva-Tiryagbyham Method of Vedic Multiplication](https://en.wikibooks.org/wiki/Vedic_Mathematics/Sutras/Urdhva-Tiryagbyham)
