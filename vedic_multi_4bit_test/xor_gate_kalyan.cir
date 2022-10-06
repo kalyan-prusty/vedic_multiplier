@@ -1,0 +1,22 @@
+* C:\FOSSEE\eSim\library\SubcircuitLibrary\xor_gate_kalyan\xor_gate_kalyan.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/02/22 12:00:34
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+SC3  Y A Net-_SC3-Pad3_ Net-_SC3-Pad3_ sky130_fd_pr__nfet_01v8		
+SC4  Net-_SC3-Pad3_ B GND GND sky130_fd_pr__nfet_01v8		
+SC7  Y Abar Net-_SC7-Pad3_ Net-_SC7-Pad3_ sky130_fd_pr__nfet_01v8		
+SC8  Net-_SC7-Pad3_ Bbar GND GND sky130_fd_pr__nfet_01v8		
+SC2  Y A Net-_SC1-Pad1_ Net-_SC1-Pad1_ sky130_fd_pr__pfet_01v8		
+SC1  Net-_SC1-Pad1_ Bbar VDD VDD sky130_fd_pr__pfet_01v8		
+SC5  Net-_SC5-Pad1_ B VDD VDD sky130_fd_pr__pfet_01v8		
+SC6  Y Abar Net-_SC5-Pad1_ Net-_SC5-Pad1_ sky130_fd_pr__pfet_01v8		
+v1  VDD GND DC		
+X1  A Abar NOT		
+X2  B Bbar NOT		
+U1  A B Y PORT		
+
+.end

@@ -1,0 +1,10 @@
+* Subcircuit HA_kalyan
+.subckt HA_kalyan net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ 
+* c:\fossee\esim\library\subcircuitlibrary\ha_kalyan\ha_kalyan.cir
+.include and_kalyan.sub
+.include xor_gate_kalyan.sub
+x2 net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad4_ xor_gate_kalyan
+x1 net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ and_kalyan
+* Control Statements
+
+.ends HA_kalyan

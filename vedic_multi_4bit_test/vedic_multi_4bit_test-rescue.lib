@@ -1,0 +1,33 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# vedic_multiplier_4bit-RESCUE-vedic_multi_4bit_test
+#
+DEF vedic_multiplier_4bit-RESCUE-vedic_multi_4bit_test X 0 40 Y Y 1 F N
+F0 "X" 0 0 60 H V C CNN
+F1 "vedic_multiplier_4bit-RESCUE-vedic_multi_4bit_test" 0 -200 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -1100 1050 1050 -1050 0 1 0 N
+X a0 1 -1300 200 200 R 50 50 1 1 I
+X a1 2 -1300 400 200 R 50 50 1 1 I
+X a3 3 -1300 600 200 R 50 50 1 1 I
+X a4 4 -1300 800 200 R 50 50 1 1 I
+X b0 5 -1300 -850 200 R 50 50 1 1 I
+X b1 6 -1300 -650 200 R 50 50 1 1 I
+X b2 7 -1300 -450 200 R 50 50 1 1 I
+X b3 8 -1300 -250 200 R 50 50 1 1 I
+X m0 9 1250 -800 200 L 50 50 1 1 O
+X m1 10 1250 -600 200 L 50 50 1 1 O
+X m2 11 1250 -400 200 L 50 50 1 1 O
+X m3 12 1250 -200 200 L 50 50 1 1 O
+X m4 13 1250 0 200 L 50 50 1 1 O
+X m5 14 1250 200 200 L 50 50 1 1 O
+X m6 15 1250 400 200 L 50 50 1 1 O
+X m7 16 1250 600 200 L 50 50 1 1 O
+X m8 17 1250 800 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

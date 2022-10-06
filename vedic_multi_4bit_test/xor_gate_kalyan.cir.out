@@ -1,0 +1,24 @@
+* c:\fossee\esim\library\subcircuitlibrary\xor_gate_kalyan\xor_gate_kalyan.cir
+
+.include not_gate_kalyan.sub
+xsc3 y a net-_sc3-pad3_ net-_sc3-pad3_ sky130_fd_pr__nfet_01v8 w=2 l=1
+xsc4 net-_sc3-pad3_ b gnd gnd sky130_fd_pr__nfet_01v8 w=2 l=1
+xsc7 y abar net-_sc7-pad3_ net-_sc7-pad3_ sky130_fd_pr__nfet_01v8 w=2 l=1
+xsc8 net-_sc7-pad3_ bbar gnd gnd sky130_fd_pr__nfet_01v8 w=2 l=1
+xsc2 y a net-_sc1-pad1_ net-_sc1-pad1_ sky130_fd_pr__pfet_01v8 w=4 l=1
+xsc1 net-_sc1-pad1_ bbar vdd vdd sky130_fd_pr__pfet_01v8 w=4 l=1
+xsc5 net-_sc5-pad1_ b vdd vdd sky130_fd_pr__pfet_01v8 w=4 l=1
+xsc6 y abar net-_sc5-pad1_ net-_sc5-pad1_ sky130_fd_pr__pfet_01v8 w=4 l=1
+v1 vdd gnd  dc 1.8
+x1 a abar not_gate_kalyan
+x2 b bbar not_gate_kalyan
+* u1  a b y port
+.tran 0e-00 0e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

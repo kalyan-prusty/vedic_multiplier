@@ -1,0 +1,22 @@
+* C:\FOSSEE\eSim\library\SubcircuitLibrary\vedic_multiplier_4bit\vedic_multiplier_4bit.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/05/22 00:24:56
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U3-Pad3_ Net-_U3-Pad4_ Net-_U4-Pad1_ Net-_U4-Pad2_ Net-_U2-Pad1_ Net-_U2-Pad2_ Net-_U2-Pad3_ Net-_U2-Pad4_ Net-_U2-Pad5_ Net-_U2-Pad6_ Net-_U2-Pad7_ Net-_U2-Pad8_ Net-_U5-Pad5_ Net-_U5-Pad6_ Net-_U5-Pad7_ Net-_U5-Pad8_ partial_product_generator		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_U1-Pad14_ Net-_U1-Pad15_ Net-_U1-Pad16_ Net-_U1-Pad17_ PORT		
+U4  Net-_U4-Pad1_ Net-_U4-Pad2_ Net-_U1-Pad10_ Net-_U1-Pad9_ dac_bridge_2		
+U2  Net-_U2-Pad1_ Net-_U2-Pad2_ Net-_U2-Pad3_ Net-_U2-Pad4_ Net-_U2-Pad5_ Net-_U2-Pad6_ Net-_U2-Pad7_ Net-_U2-Pad8_ Net-_U2-Pad9_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ ksa_4bit		
+U3  Net-_U10-Pad2_ Net-_U10-Pad2_ Net-_U3-Pad3_ Net-_U3-Pad4_ Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_U3-Pad9_ Net-_U3-Pad10_ Net-_U3-Pad11_ Net-_U3-Pad12_ Net-_U3-Pad13_ ksa_4bit		
+U6  Net-_U3-Pad12_ Net-_U3-Pad13_ Net-_U1-Pad12_ Net-_U1-Pad11_ dac_bridge_2		
+U5  Net-_U5-Pad1_ Net-_U5-Pad2_ Net-_U3-Pad10_ Net-_U3-Pad11_ Net-_U5-Pad5_ Net-_U5-Pad6_ Net-_U5-Pad7_ Net-_U5-Pad8_ Net-_U5-Pad9_ Net-_U5-Pad10_ Net-_U5-Pad11_ Net-_U5-Pad12_ Net-_U5-Pad13_ ksa_4bit		
+X2  Net-_U8-Pad3_ Net-_U8-Pad4_ Net-_U9-Pad2_ Net-_U9-Pad1_ HA_kalyan		
+U7  Net-_U5-Pad9_ Net-_U5-Pad10_ Net-_U5-Pad11_ Net-_U5-Pad12_ Net-_U5-Pad13_ Net-_U1-Pad17_ Net-_U1-Pad16_ Net-_U1-Pad15_ Net-_U1-Pad14_ Net-_U1-Pad13_ dac_bridge_5		
+U8  Net-_U2-Pad9_ Net-_U3-Pad9_ Net-_U8-Pad3_ Net-_U8-Pad4_ dac_bridge_2		
+U9  Net-_U9-Pad1_ Net-_U9-Pad2_ Net-_U5-Pad2_ Net-_U5-Pad1_ adc_bridge_2		
+U10  GND Net-_U10-Pad2_ adc_bridge_1		
+
+.end

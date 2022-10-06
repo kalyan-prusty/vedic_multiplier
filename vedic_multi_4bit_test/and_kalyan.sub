@@ -1,0 +1,13 @@
+* Subcircuit and_kalyan
+.subckt and_kalyan a b y 
+* c:\fossee\esim\library\subcircuitlibrary\and_kalyan\and_kalyan.cir
+xsc1 net-_sc1-pad1_ a vdd vdd sky130_fd_pr__pfet_01v8 w=2 l=1
+xsc4 net-_sc1-pad1_ b vdd vdd sky130_fd_pr__pfet_01v8 w=2 l=1
+xsc5 y net-_sc1-pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=2 l=1
+xsc2 net-_sc1-pad1_ a net-_sc2-pad3_ net-_sc2-pad3_ sky130_fd_pr__nfet_01v8 w=2 l=1
+xsc3 net-_sc2-pad3_ b gnd gnd sky130_fd_pr__nfet_01v8 w=2 l=1
+xsc6 y net-_sc1-pad1_ gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=1
+v1 vdd gnd  dc 1.8
+* Control Statements
+
+.ends and_kalyan
