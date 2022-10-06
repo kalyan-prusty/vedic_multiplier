@@ -196,7 +196,17 @@ module ksa_4bit(a,b,y);
 
 endmodule 
 ```
-Using the above code & NgVeri tool of eSim .tlv file is generated which is again converted to
+Using the above code & NgVeri tool of eSim .tlv file is generated which is again converted to spice model using the follwing instruction.
+### Generation of Counter Model using Ngveri Tab
+1. Open eSim
+2. Run NgVeri-Makerchip
+3. Add top level verilog file in Makerchip Tab
+4. Click on NgVeri tab
+5. Add dependency files
+6. Click on Run Verilog to NgSpice Converter
+7. Debug if any errors
+8. Model created successfully
+
 This KSA is simulated in makerchip and the simulated result is as follows. The input a and b are asserted with random number by makerchip (in this example a = **0xF** and b = **0x9**) which results **0xF + 0x9 = 0x18**. Hence the KSA is verified and now we can use it in eSim for our mixed signal design. 
 
 <p align="center" width="100%">
