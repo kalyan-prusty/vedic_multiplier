@@ -1,4 +1,10 @@
-# Tool Used
+# 4bit Vedic Multiplier with Kogge Stone PPA
+
+Urdhva Tiryagbhyam sutra which is the general formula applicable to all cases of multiplication .“Urdhva” and “Tiryagbhyam” words are derived from Sanskrit literature. Urdhva means “Vertically” and Tiryagbhyam means “crosswise”. It is based on a novel concept, where the generation of all intermediates can be done with the concurrent addition of partial products. 
+
+This repository presents the mixed signal design for Vedic Multiplier using PPA (Parallel Prefix Adder). Partial product generation logic, a complete analog circuit is designed in [eSim](https://esim.fossee.in/home) and is simulated with [NgSpice](http://ngspice.sourceforge.net/docs.html) & SKY130 library. KSA designed using Verilog HDL is simulated & verified in [Makerchip](https://www.makerchip.com/).
+
+## Tool Used
 
 ### eSim
 
@@ -6,34 +12,29 @@ eSim (previously known as Oscad / FreeEDA) is a free/libre and open source EDA t
 
 eSim offers similar capabilities and ease of use as any equivalent proprietary software for schematic creation, simulation and PCB design, without having to pay a huge amount of money to procure licenses. Hence it can be an affordable alternative to educational institutions and SMEs. It can serve as an alternative to commercially available/licensed software tools like OrCAD, Xpedition and HSPICE.
 
-For more details refer:
-https://esim.fossee.in/home
+For more details refer [here](https://esim.fossee.in/home).
 
 ### NgSpice
 
 NgSpice is the open source spice simulator for electric and electronic circuits. Such a circuit may comprise of JFETs, bipolar and MOS transistors, passive elements like R, L, or C, diodes, transmission lines and other devices, all interconnected in a netlist. Digital circuits are simulated as well, event driven and fast, from single gates to complex circuits. And you may enter the combination of both analog and digital as a mixed-signal circuit.
 
-For more details refer:
-http://ngspice.sourceforge.net/docs.html
+For more details refer [here](http://ngspice.sourceforge.net/docs.html).
+
 
 ### Makerchip
 
 It is an Online Web Browser IDE for Verilog/System-verilog/TL-Verilog Simulation. 
 
-For More Details Refer:
-https://www.makerchip.com/
+For More Details Refer [here](https://www.makerchip.com/).
 
 ### Verilator
 
 It is a tool which converts Verilog code to C++ objects. 
 
-For More Details Refer:
-https://www.veripool.org/verilator/
+For More Details Refer [here](https://www.veripool.org/verilator/).
 
+## Methodology 
 
-# 4bit Vedic_Multiplier with Kogge Stone PPA
-
-- Urdhva Tiryagbhyam sutra which is the general formula applicable to all cases of multiplication .“Urdhva” and “Tiryagbhyam” words are derived from Sanskrit literature. Urdhva means “Vertically” and Tiryagbhyam means “crosswise”. It is based on a novel concept, where the generation of all intermediates can be done with the concurrent addition of partial products. 
 - Let's take an example of multipling two 2-digit number 25 and 38. These are the following steps followed in this process.
   - **Step-1**: units place digits are multiplied.   
   - **Step-2**: cross multiplication (units place of 1st number is multiplied with tens place of 2nd and vice versa and then both are added)
@@ -192,6 +193,7 @@ module ksa_4bit(a,b,y);
 
 endmodule 
 ```
+Using the above code & NgVeri tool of eSim .tlv file is generated which is again converted to
 This KSA is simulated in makerchip and the simulated result is as follows. The input a and b are asserted with random number by makerchip (in this example a = **0xF** and b = **0x9**) which results **0xF + 0x9 = 0x18**. Hence the KSA is verified and now we can use it in eSim for our mixed signal design. 
 
 <p align="center" width="100%">
@@ -230,3 +232,16 @@ Output from the above design:
 <p align="center" width="100%">
     <img width="100%" src="images/z_wave.gif"> 
 </p>
+
+## Reference
+[1] [Urdhva-Tiryagbyham Method of Vedic Multiplication](https://en.wikibooks.org/wiki/Vedic_Mathematics/Sutras/Urdhva-Tiryagbyham)
+
+[2] [Vedic Multiplier](https://www.semanticscholar.org/paper/Design-of-Vedic-multiplier-using-Urdhva-Tiryagbhyam-Sutra/29e50274fddab42ec935af57a39aac92080c9e6c)
+
+[3] [Kogge Stone Adder](https://en.wikipedia.org/wiki/Kogge%E2%80%93Stone_adder)
+
+## Acknowledgment
+1. [FOSSEE](https://esim.fossee.in/), IIT Bombay
+2. [Steve Hoover](https://www.linkedin.com/in/steve-hoover-a44b607/), Founder, Redwood EDA
+3. [Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/), Co-founder, VSD Corp. Pvt. Ltd.
+4. [Sumanto Kar](https://www.linkedin.com/in/sumanto-kar-0424391a9/), eSim Team, FOSSEE
