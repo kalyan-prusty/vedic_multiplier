@@ -1,0 +1,40 @@
+* C:\Users\kalya\eSim-Workspace\vedic_multi_4bit_dff_test\vedic_multi_4bit_dff_test.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/08/22 00:58:59
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  ? GND DC		
+U1  z8 plot_v1		
+U2  z7 plot_v1		
+U3  z6 plot_v1		
+U4  z5 plot_v1		
+U5  z4 plot_v1		
+U6  z3 plot_v1		
+U7  z2 plot_v1		
+U8  z1 plot_v1		
+U9  z0 plot_v1		
+scmode1  SKY130mode		
+U11  b0 plot_v1		
+U13  b1 plot_v1		
+U15  b2 plot_v1		
+U17  b3 plot_v1		
+U10  a0 plot_v1		
+U12  a1 plot_v1		
+U14  a2 plot_v1		
+U16  a3 plot_v1		
+v9  b3 GND pulse		
+v7  b2 GND pulse		
+v5  b1 GND pulse		
+v3  b0 GND pulse		
+v8  a3 GND pulse		
+v6  a2 GND pulse		
+v4  a1 GND pulse		
+v2  a0 GND pulse		
+X1  a0 a1 a2 a3 b0 b1 b2 b3 z0 z1 z2 z3 z4 z5 z6 z7 z8 clk vedic_multi_4bit_dff		
+v10  clk GND pulse		
+U18  clk plot_v1		
+
+.end

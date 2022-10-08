@@ -1,0 +1,20 @@
+* c:\fossee\esim\library\subcircuitlibrary\2bit_vedic_multi\2bit_vedic_multi.cir
+
+.include and_kalyan.sub
+.include HA_kalyan.sub
+x3 a1 b0 net-_x3-pad3_ and_kalyan
+x4 a1 b1 net-_x4-pad3_ and_kalyan
+x1 a0 b0 y0 and_kalyan
+x2 a0 b1 net-_x2-pad3_ and_kalyan
+* u1  a0 a1 b0 b1 y0 y1 y2 y3 port
+x5 net-_x2-pad3_ net-_x3-pad3_ net-_x5-pad3_ y1 HA_kalyan
+x6 net-_x5-pad3_ net-_x4-pad3_ y3 y2 HA_kalyan
+.tran 0e-00 0e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

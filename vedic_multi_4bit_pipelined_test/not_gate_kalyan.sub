@@ -1,0 +1,9 @@
+* Subcircuit not_gate_kalyan
+.subckt not_gate_kalyan net-_sc1-pad2_ net-_sc1-pad1_ 
+* c:\fossee\esim\library\subcircuitlibrary\not_gate_kalyan\not_gate_kalyan.cir
+xsc2 net-_sc1-pad1_ net-_sc1-pad2_ gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=1
+xsc1 net-_sc1-pad1_ net-_sc1-pad2_ vdd vdd sky130_fd_pr__pfet_01v8 w=2 l=1
+v1 vdd gnd  dc 1.8
+* Control Statements
+
+.ends not_gate_kalyan

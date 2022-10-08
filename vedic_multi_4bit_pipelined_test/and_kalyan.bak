@@ -1,0 +1,296 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:eSim_Ngveri
+LIBS:eSim_SKY130
+LIBS:eSim_SKY130_Subckts
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L sky130_fd_pr__pfet_01v8 SC?
+U 1 1 63388216
+P 4250 2900
+F 0 "SC?" H 4300 3200 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8" H 4550 2987 50  0000 R CNN
+F 2 "" H 4250 1400 50  0001 C CNN
+F 3 "" H 4250 2900 50  0001 C CNN
+	1    4250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L sky130_fd_pr__pfet_01v8 SC?
+U 1 1 63388244
+P 5400 2900
+F 0 "SC?" H 5450 3200 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8" H 5700 2987 50  0000 R CNN
+F 2 "" H 5400 1400 50  0001 C CNN
+F 3 "" H 5400 2900 50  0001 C CNN
+	1    5400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L sky130_fd_pr__pfet_01v8 SC?
+U 1 1 6338827E
+P 7300 3150
+F 0 "SC?" H 7350 3450 50  0000 C CNN
+F 1 "sky130_fd_pr__pfet_01v8" H 7600 3237 50  0000 R CNN
+F 2 "" H 7300 1650 50  0001 C CNN
+F 3 "" H 7300 3150 50  0001 C CNN
+	1    7300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L sky130_fd_pr__nfet_01v8 SC?
+U 1 1 63388377
+P 4700 4400
+F 0 "SC?" H 4750 4700 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8" H 5000 4487 50  0000 R CNN
+F 2 "" H 4700 2900 50  0001 C CNN
+F 3 "" H 4700 4400 50  0001 C CNN
+	1    4700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L sky130_fd_pr__nfet_01v8 SC?
+U 1 1 633883D4
+P 4700 5250
+F 0 "SC?" H 4750 5550 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8" H 5000 5337 50  0000 R CNN
+F 2 "" H 4700 3750 50  0001 C CNN
+F 3 "" H 4700 5250 50  0001 C CNN
+	1    4700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L sky130_fd_pr__nfet_01v8 SC?
+U 1 1 63388427
+P 7300 4050
+F 0 "SC?" H 7350 4350 50  0000 C CNN
+F 1 "sky130_fd_pr__nfet_01v8" H 7600 4137 50  0000 R CNN
+F 2 "" H 7300 2550 50  0001 C CNN
+F 3 "" H 7300 4050 50  0001 C CNN
+	1    7300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U?
+U 1 1 6338846B
+P 2500 3300
+F 0 "U?" H 2550 3400 30  0000 C CNN
+F 1 "PORT" H 2500 3300 30  0000 C CNN
+F 2 "" H 2500 3300 60  0000 C CNN
+F 3 "" H 2500 3300 60  0000 C CNN
+	1    2500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U?
+U 2 1 633884E4
+P 2500 3700
+F 0 "U?" H 2550 3800 30  0000 C CNN
+F 1 "PORT" H 2500 3700 30  0000 C CNN
+F 2 "" H 2500 3700 60  0000 C CNN
+F 3 "" H 2500 3700 60  0000 C CNN
+	2    2500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L DC v?
+U 1 1 6338886B
+P 1350 1700
+F 0 "v?" H 1150 1800 60  0000 C CNN
+F 1 "DC" H 1150 1650 60  0000 C CNN
+F 2 "R1" H 1050 1700 60  0000 C CNN
+F 3 "" H 1350 1700 60  0000 C CNN
+	1    1350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L eSim_GND #PWR?
+U 1 1 633888C8
+P 1350 2250
+F 0 "#PWR?" H 1350 2000 50  0001 C CNN
+F 1 "eSim_GND" H 1350 2100 50  0000 C CNN
+F 2 "" H 1350 2250 50  0001 C CNN
+F 3 "" H 1350 2250 50  0001 C CNN
+	1    1350 2250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1350 1250 1    60   Input ~ 0
+VDD
+Wire Wire Line
+	1350 2250 1350 2150
+Wire Wire Line
+	4350 2900 4550 2900
+Wire Wire Line
+	4550 2900 4550 2450
+Wire Wire Line
+	4450 2450 5800 2450
+Wire Wire Line
+	4450 2450 4450 2600
+Wire Wire Line
+	5500 2900 5800 2900
+Wire Wire Line
+	5800 2900 5800 2450
+Wire Wire Line
+	5600 2450 5600 2600
+Wire Wire Line
+	7000 4050 7000 3150
+Wire Wire Line
+	7500 3450 7500 3750
+Wire Wire Line
+	7400 3150 7650 3150
+Wire Wire Line
+	7650 3150 7650 2750
+Wire Wire Line
+	7650 2750 7500 2750
+Wire Wire Line
+	7500 2550 7500 2850
+Wire Wire Line
+	7400 4050 7650 4050
+Wire Wire Line
+	7650 4050 7650 4450
+Wire Wire Line
+	7650 4450 7500 4450
+Wire Wire Line
+	7500 4350 7500 4550
+Wire Wire Line
+	4450 3200 4450 3550
+Wire Wire Line
+	4450 3550 7000 3550
+Wire Wire Line
+	5600 3550 5600 3200
+Wire Wire Line
+	4900 4100 4900 3550
+Connection ~ 4900 3550
+Wire Wire Line
+	4800 4400 5050 4400
+Wire Wire Line
+	5050 4400 5050 4800
+Wire Wire Line
+	5050 4800 4900 4800
+Wire Wire Line
+	4900 4700 4900 4950
+Connection ~ 4900 4800
+Wire Wire Line
+	4800 5250 5050 5250
+Wire Wire Line
+	5050 5250 5050 5650
+Wire Wire Line
+	5050 5650 4900 5650
+Wire Wire Line
+	4900 5550 4900 5800
+$Comp
+L eSim_GND #PWR?
+U 1 1 63388C32
+P 4900 5800
+F 0 "#PWR?" H 4900 5550 50  0001 C CNN
+F 1 "eSim_GND" H 4900 5650 50  0000 C CNN
+F 2 "" H 4900 5800 50  0001 C CNN
+F 3 "" H 4900 5800 50  0001 C CNN
+	1    4900 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 5650
+Text GLabel 2750 3300 2    60   Input ~ 0
+A
+Text GLabel 2750 3700 2    60   Input ~ 0
+B
+Text GLabel 5050 2300 1    60   Input ~ 0
+VDD
+Wire Wire Line
+	5050 2450 5050 2300
+Connection ~ 4550 2450
+Connection ~ 5600 2450
+Connection ~ 5050 2450
+Connection ~ 7000 3550
+Connection ~ 5600 3550
+$Comp
+L PORT U?
+U 3 1 63388E50
+P 8650 3550
+F 0 "U?" H 8700 3650 30  0000 C CNN
+F 1 "PORT" H 8650 3550 30  0000 C CNN
+F 2 "" H 8650 3550 60  0000 C CNN
+F 3 "" H 8650 3550 60  0000 C CNN
+	3    8650 3550
+	-1   0    0    1   
+$EndComp
+Text GLabel 7700 3600 2    60   Output ~ 0
+Y
+Wire Wire Line
+	7700 3600 7500 3600
+Connection ~ 7500 3600
+Text GLabel 8400 3550 0    60   Output ~ 0
+Y
+Text GLabel 3950 2900 0    60   Input ~ 0
+A
+Text GLabel 4400 4400 0    60   Input ~ 0
+A
+Text GLabel 5100 2900 0    60   Input ~ 0
+B
+Text GLabel 4400 5250 0    60   Input ~ 0
+B
+$Comp
+L eSim_GND #PWR?
+U 1 1 6338909A
+P 7500 4550
+F 0 "#PWR?" H 7500 4300 50  0001 C CNN
+F 1 "eSim_GND" H 7500 4400 50  0000 C CNN
+F 2 "" H 7500 4550 50  0001 C CNN
+F 3 "" H 7500 4550 50  0001 C CNN
+	1    7500 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7500 4450
+Text GLabel 7500 2550 1    60   Input ~ 0
+VDD
+Connection ~ 7500 2750
+$EndSCHEMATC
