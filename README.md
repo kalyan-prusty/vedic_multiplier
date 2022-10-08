@@ -75,7 +75,7 @@ The block diagram of the 4bit Vedic Multiplier (pure combinational) can be shown
 The block diagram of the 4bit Pipelined Vedic Multiplier can be shown as follows.
 
 <p align="center" width="100%">
-    <img width="60%" src="images/vedic_pipelined.svg"> 
+    <img width="60%" src="images/vedic_pipelined.png"> 
 </p>
 
 ## Components of 4-bit Multiplier 
