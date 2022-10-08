@@ -1,9 +1,9 @@
-# 4bit Vedic Multiplier with Kogge Stone PPA
+# 4bit Pipelined Vedic Multiplier with Kogge Stone PPA
 
 Urdhva Tiryagbhyam sutra which is the general formula applicable to all cases of multiplication .“Urdhva” and “Tiryagbhyam” words are derived from Sanskrit literature. Urdhva means “Vertically” and Tiryagbhyam means “crosswise”. It is based on a novel concept, where the generation of all intermediates can be done with the concurrent addition of partial products. 
 
 This repository presents the mixed signal design for Vedic Multiplier using PPA (Parallel Prefix Adder) designed in [Mixed Signal SoC design
-Marathon using eSim & SKY130](https://hackathon.fossee.in/esim/). Partial product generation logic, a complete analog circuit is designed in [eSim](https://esim.fossee.in/home) and is simulated with [NgSpice](http://ngspice.sourceforge.net/docs.html) & SKY130 library. KSA designed using Verilog HDL is simulated & verified in [Makerchip](https://www.makerchip.com/).
+Marathon using eSim & SKY130](https://hackathon.fossee.in/esim/). Partial product generation logic, a complete analog circuit is designed in [eSim](https://esim.fossee.in/home) and is simulated with [NgSpice](http://ngspice.sourceforge.net/docs.html) & SKY130 library. KSA & 16-bit Flipflop are designed using Verilog HDL is simulated & verified in [Makerchip](https://www.makerchip.com/).
 
 All the project related files are available [here](https://github.com/kalyan-prusty/vedic_multiplier/tree/main/vedic_multi_4bit_test).
 
@@ -64,6 +64,8 @@ Following represents all the steps in pictorial format.
 ![Step-3](images/step_3.png)
 
 ## Block Diagram of 4-bit Multiplier
+Before going to the pipelined verssion of the multiplier we will verify the logic with the complete combinational block as debuging the combinational design is quite easier then the sequential pipelined design. 
+
 The block diagram of the 4bit Vedic Multiplier can be shown as follows.
 
 <p align="center" width="100%">
@@ -247,15 +249,16 @@ Output from the above design:
     <img width="100%" src="images/z_wave.gif"> 
 </p>
 
+After the simulation is done properly for the completly combinational circuit of the design we can improve the design using a Flipflip and dividing the logical design in to 2 stages where First stage of pipeline being the partial product generator (Analog Design) and second stage being the partial product adder using KSA (Degital Design). As the Flip flop is introduced now the sampling of input happens on positive edge of clock as the FF designed is a positive edge triggered flipflip. And output is produced just after the sampling  as both side of the flipflop there are combinational circuits present.
 ## Salient Feature of Design
 - Parallel generation of partial product makes the design more suitable for faster multiplication application.  
+- This whole design is divided it into 2 logical part just with a flipflop of 16 bit width and 2 stages for better through-put with same latency. 
 - Kogge Stone Parallel Prefix Adder is one of the fastest adder being used in design.
 - All the primitive gates are designed with proper W/L ratio to maintain rise and fall time same. 
 - Modularzation of the project makes the design easy to debug and improve.
 - Design is completely scalable as this can be used as a building block for 8bit vedic multiplier.
 
 ## Future Scope
-- This whole design is a combinational circuit but dividing it into logical 2 part and including just with a flipflop of 16 bit width we can pipeline this design with 2 stages. First stage of pipeline being the partial product generator (Analog Design) and second stage being the partial product adder using KSA (Degital Design).
 - KSA can be replaced by some more improved design of adder.
 
 ## Reference
