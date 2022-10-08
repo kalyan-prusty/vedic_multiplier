@@ -302,7 +302,10 @@ Output from the above design:
 [3] [Kogge Stone Adder](https://en.wikipedia.org/wiki/Kogge%E2%80%93Stone_adder)
 
 ## Acknowledgment
-1. [FOSSEE](https://esim.fossee.in/), IIT Bombay
-2. [Steve Hoover](https://www.linkedin.com/in/steve-hoover-a44b607/), Founder, Redwood EDA
-3. [Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/), Co-founder, VSD Corp. Pvt. Ltd.
-4. [Sumanto Kar](https://www.linkedin.com/in/sumanto-kar-0424391a9/), eSim Team, FOSSEE
+1. [FOSSEE](https://esim.fossee.in/), [IIT Bombay](http://iitb.ac.in/)
+2. [Google](https://www.google.co.in/)
+3. [Spoken Tutorial](https://spoken-tutorial.org/)
+4. [Chip to Startup](https://www.c2s.gov.in/)
+5. [Steve Hoover](https://www.linkedin.com/in/steve-hoover-a44b607/), Founder, Redwood EDA
+6. [Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/), Co-founder, [VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/)
+7. [Sumanto Kar](https://www.linkedin.com/in/sumanto-kar-0424391a9/), eSim Team, FOSSEE
