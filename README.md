@@ -66,10 +66,16 @@ Following represents all the steps in pictorial format.
 ## Block Diagram of 4-bit Multiplier
 Before going to the pipelined verssion of the multiplier we will verify the logic with the complete combinational block as debuging the combinational design is quite easier then the sequential pipelined design. 
 
-The block diagram of the 4bit Vedic Multiplier can be shown as follows.
+The block diagram of the 4bit Vedic Multiplier (pure combinational) can be shown as follows.
 
 <p align="center" width="100%">
     <img width="60%" src="images/kogge_stone.svg"> 
+</p>
+
+The block diagram of the 4bit Pipelined Vedic Multiplier can be shown as follows.
+
+<p align="center" width="100%">
+    <img width="60%" src="images/vedic_pipelined.svg"> 
 </p>
 
 ## Components of 4-bit Multiplier 
