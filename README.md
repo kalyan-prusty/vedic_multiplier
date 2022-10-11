@@ -22,7 +22,7 @@ All the project related files are available [here](https://github.com/kalyan-pru
   * [Half Adder](#half-adder)
   * [2-bit Vedic Multiplier](#2-bit-vedic-multiplier)
   * [Kogge Stone Adder](#kogge-stone-adder)
-  * [Generation of Counter Model using Ngveri Tab](#generation-of-counter-model-using-ngveri-tab)
+  * [Generation of Kogge Stone PPA Model using Ngveri Tab](#generation-of-kogge-stone-ppa-model-using-ngveri-tab)
 - [Schematic of 4-bit multiplier with KSA](#schematic-of-4-bit-multiplier-with-ksa)
   * [Simulation Results for Non-Pipelined Vedic Multiplier](#simulation-results-for-non-pipelined-vedic-multiplier)
   * [Simulation Results for Pipelined Vedic Multiplier](#simulation-results-for-pipelined-vedic-multiplier)
@@ -30,6 +30,7 @@ All the project related files are available [here](https://github.com/kalyan-pru
 - [Future Scope](#future-scope)
 - [Reference](#reference)
 - [Acknowledgment](#acknowledgment)
+
 
 ## Tool Used
 
