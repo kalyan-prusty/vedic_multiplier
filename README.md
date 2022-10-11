@@ -7,6 +7,30 @@ Marathon using eSim & SKY130](https://hackathon.fossee.in/esim/). Partial produc
 
 All the project related files are available [here](https://github.com/kalyan-prusty/vedic_multiplier/tree/main/vedic_multi_4bit_test).
 
+## Table of Contents
+- [Tool Used](#tool-used)
+  * [eSim](#esim)
+  * [NgSpice](#ngspice)
+  * [Makerchip](#makerchip)
+  * [Verilator](#verilator)
+- [Methodology](#methodology)
+- [Block Diagram of 4-bit Multiplier](#block-diagram-of-4-bit-multiplier)
+- [Components of 4-bit Multiplier](#components-of-4-bit-multiplier)
+  * [NOT gate with SKY130](#not-gate-with-sky130)
+  * [AND gate with SKY130](#and-gate-with-sky130)
+  * [XOR gate with SKY130](#xor-gate-with-sky130)
+  * [Half Adder](#half-adder)
+  * [2-bit Vedic Multiplier](#2-bit-vedic-multiplier)
+  * [Kogge Stone Adder](#kogge-stone-adder)
+  * [Generation of Counter Model using Ngveri Tab](#generation-of-counter-model-using-ngveri-tab)
+- [Schematic of 4-bit multiplier with KSA](#schematic-of-4-bit-multiplier-with-ksa)
+  * [Simulation Results for Non-Pipelined Vedic Multiplier](#simulation-results-for-non-pipelined-vedic-multiplier)
+  * [Simulation Results for Pipelined Vedic Multiplier](#simulation-results-for-pipelined-vedic-multiplier)
+- [Salient Feature of Design](#salient-feature-of-design)
+- [Future Scope](#future-scope)
+- [Reference](#reference)
+- [Acknowledgment](#acknowledgment)
+
 ## Tool Used
 
 ### eSim
@@ -206,7 +230,7 @@ module ksa_4bit(a,b,y);
 endmodule 
 ```
 Using the above code & NgVeri tool of eSim .tlv file is generated which is again converted to spice model using the follwing instruction.
-### Generation of Counter Model using Ngveri Tab
+### Generation of Kogge Stone PPA Model using Ngveri Tab
 1. Open eSim
 2. Run NgVeri-Makerchip
 3. Add top level verilog file in Makerchip Tab
