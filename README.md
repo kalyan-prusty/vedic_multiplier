@@ -5,7 +5,7 @@ Urdhva Tiryagbhyam sutra which is the general formula applicable to all cases of
 This repository presents the mixed signal design for Vedic Multiplier using PPA (Parallel Prefix Adder) designed in [Mixed Signal SoC design
 Marathon using eSim & SKY130](https://hackathon.fossee.in/esim/). Partial product generation logic, a complete analog circuit is designed in [eSim](https://esim.fossee.in/home) and is simulated with [NgSpice](http://ngspice.sourceforge.net/docs.html) & SKY130 library. KSA & 16-bit Flipflop are designed using Verilog HDL is simulated & verified in [Makerchip](https://www.makerchip.com/).
 
-All the project related files are available [here](https://github.com/kalyan-prusty/vedic_multiplier/tree/main/vedic_multi_4bit_test).
+All the project related files are available [here (for non-pipelined)](https://github.com/kalyan-prusty/vedic_multiplier/tree/main/vedic_multi_4bit_test) and [here (for pipelined)](https://github.com/kalyan-prusty/vedic_multiplier/tree/main/vedic_multi_4bit_pipelined_test).
 
 ## Table of Contents
 - [Tool Used](#tool-used)
